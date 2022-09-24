@@ -24,7 +24,6 @@ void pot_init(int gpio) {
     printf("# Pot init complete!");
 }
 
-
 uint8_t pot_scaled() {
     raw = adc_read();                     // Get a new 12 bit ADC val
     if (abs(raw - prevRaw) > MOVE_THRESHOLD) { // If it's a big enough move
