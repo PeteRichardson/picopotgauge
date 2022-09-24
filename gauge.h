@@ -1,0 +1,1 @@
+void gauge_init();
